@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Fin de las pruebas de distancia.
+Time: 8000065 ns  Iteration: 0  Process: /tb_System_TOP/stim_process  File: C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sim_1/new/tb_System_TOP.vhd
+$finish called at time : 8000065 ns : File "C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sim_1/new/tb_System_TOP.vhd" Line 203

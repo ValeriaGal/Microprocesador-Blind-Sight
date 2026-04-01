@@ -1,0 +1,34 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_System_TOP_behav xil_defaultlib.tb_System_TOP -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Sensor_HCSR04_Modelo [sensor_hcsr04_modelo_default]
+Compiling architecture behavioral of entity xil_defaultlib.UnidadControl [unidadcontrol_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_PC [contador_pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegistroMAR [registromar_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegistroGPR [registrogpr_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegistroRET [registroret_default]
+Compiling architecture behavioral of entity xil_defaultlib.MemoriaROM [memoriarom_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.TriggerGen [triggergen_default]
+Compiling architecture behavioral of entity xil_defaultlib.distance_calculation [distance_calculation_default]
+Compiling architecture behavioral of entity xil_defaultlib.SensorULTSON [sensorultson_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegistrosSensores [registrossensores_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.Acumulador [acumulador_default]
+Compiling architecture behavioral of entity xil_defaultlib.Buzzer [buzzer_default]
+Compiling architecture behavioral of entity xil_defaultlib.ActuadorVibracion [actuadorvibracion_default]
+Compiling architecture behavioral of entity xil_defaultlib.Controlador_Vibradores [controlador_vibradores_default]
+Compiling architecture behavioral of entity xil_defaultlib.System_TOP [system_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_system_top
+Built simulation snapshot tb_System_TOP_behav

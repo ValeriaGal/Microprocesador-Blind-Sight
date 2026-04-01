@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sim_1/new/HCSR04_Modelo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sensor_HCSR04_Modelo'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sim_1/new/tb_System_TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_System_TOP'
