@@ -1,0 +1,396 @@
+
+*** Running vivado
+    with args -log System_TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source System_TOP.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Mon Nov 17 16:35:52 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source System_TOP.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/utils_1/imports/synth_1/Contador_PC.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/utils_1/imports/synth_1/Contador_PC.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top System_TOP -part xc7s100fgga676-1Q
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31212
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1003.633 ; gain = 496.051
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'System_TOP' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:63]
+INFO: [Synth 8-3491] module 'UnidadControl' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/UnidadControl.vhd:26' bound to instance 'Inst_UC' of component 'UnidadControl' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'UnidadControl' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/UnidadControl.vhd:61]
+WARNING: [Synth 8-614] signal 'acc_out' is read in the process but is not in the sensitivity list [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/UnidadControl.vhd:109]
+INFO: [Synth 8-256] done synthesizing module 'UnidadControl' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/UnidadControl.vhd:61]
+INFO: [Synth 8-3491] module 'Contador_PC' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Contador_PC.vhd:26' bound to instance 'Inst_PC' of component 'Contador_PC' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'Contador_PC' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Contador_PC.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Contador_PC' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Contador_PC.vhd:36]
+INFO: [Synth 8-3491] module 'RegistroMAR' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistroMAR.vhd:25' bound to instance 'Inst_MAR' of component 'RegistroMAR' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'RegistroMAR' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistroMAR.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'RegistroMAR' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistroMAR.vhd:35]
+INFO: [Synth 8-3491] module 'RegistroGPR' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistroGPR.vhd:25' bound to instance 'Inst_GPR' of component 'RegistroGPR' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'RegistroGPR' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistroGPR.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'RegistroGPR' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistroGPR.vhd:36]
+INFO: [Synth 8-3491] module 'RegistroRET' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistroRET.vhd:25' bound to instance 'Inst_RET' of component 'RegistroRET' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'RegistroRET' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistroRET.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'RegistroRET' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistroRET.vhd:35]
+INFO: [Synth 8-3491] module 'MemoriaROM' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/MemoriaROM.vhd:25' bound to instance 'Inst_ROM' of component 'MemoriaROM' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:292]
+INFO: [Synth 8-638] synthesizing module 'MemoriaROM' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/MemoriaROM.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'MemoriaROM' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/MemoriaROM.vhd:35]
+INFO: [Synth 8-3491] module 'RegistrosSensores' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistrosSensores.vhd:27' bound to instance 'Inst_RegSens' of component 'RegistrosSensores' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'RegistrosSensores' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistrosSensores.vhd:39]
+INFO: [Synth 8-3491] module 'SensorULTSON' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/SensorULTSON.vhd:25' bound to instance 'Sensor_Inst' of component 'SensorULTSON' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistrosSensores.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'SensorULTSON' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/SensorULTSON.vhd:39]
+	Parameter n bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/counter.vhd:26' bound to instance 'Inst_counter' of component 'counter' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/SensorULTSON.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/counter.vhd:34]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/counter.vhd:34]
+	Parameter n bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'TriggerGen' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/TriggerGen.vhd:25' bound to instance 'Inst_TriggerGen' of component 'TriggerGen' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/SensorULTSON.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'TriggerGen' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/TriggerGen.vhd:34]
+	Parameter n bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'TriggerGen' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/TriggerGen.vhd:34]
+INFO: [Synth 8-3491] module 'distance_calculation' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/distance_calculation.vhd:25' bound to instance 'Inst_distance_calculation' of component 'distance_calculation' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/SensorULTSON.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'distance_calculation' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/distance_calculation.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'distance_calculation' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/distance_calculation.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'SensorULTSON' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/SensorULTSON.vhd:39]
+INFO: [Synth 8-3491] module 'SensorULTSON' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/SensorULTSON.vhd:25' bound to instance 'Sensor_Inst' of component 'SensorULTSON' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistrosSensores.vhd:66]
+INFO: [Synth 8-3491] module 'SensorULTSON' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/SensorULTSON.vhd:25' bound to instance 'Sensor_Inst' of component 'SensorULTSON' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistrosSensores.vhd:66]
+INFO: [Synth 8-3491] module 'SensorULTSON' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/SensorULTSON.vhd:25' bound to instance 'Sensor_Inst' of component 'SensorULTSON' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistrosSensores.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'RegistrosSensores' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/RegistrosSensores.vhd:39]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/ALU.vhd:26' bound to instance 'Inst_ALU' of component 'ALU' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:313]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/ALU.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/ALU.vhd:39]
+INFO: [Synth 8-3491] module 'Acumulador' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Acumulador.vhd:25' bound to instance 'Inst_ACC' of component 'Acumulador' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:326]
+INFO: [Synth 8-638] synthesizing module 'Acumulador' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Acumulador.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Acumulador' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Acumulador.vhd:35]
+INFO: [Synth 8-3491] module 'Buzzer' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Buzzer.vhd:25' bound to instance 'Inst_BUZZER' of component 'Buzzer' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:336]
+INFO: [Synth 8-638] synthesizing module 'Buzzer' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Buzzer.vhd:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Buzzer.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'Buzzer' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Buzzer.vhd:35]
+INFO: [Synth 8-3491] module 'Controlador_Vibradores' declared at 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Controlador_Vibradores.vhd:26' bound to instance 'Inst_Motores' of component 'Controlador_Vibradores' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'Controlador_Vibradores' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Controlador_Vibradores.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'ActuadorVibracion' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/ActuadorVibracion.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ActuadorVibracion' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/ActuadorVibracion.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Controlador_Vibradores' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/Controlador_Vibradores.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'System_TOP' (0#1) [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/System_TOP.vhd:63]
+WARNING: [Synth 8-3917] design System_TOP has port o_uc_state[1] driven by constant 0
+WARNING: [Synth 8-3917] design System_TOP has port o_uc_state[0] driven by constant 0
+WARNING: [Synth 8-7129] Port enable in module Buzzer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_enable in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[7] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[6] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[5] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[4] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[3] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[2] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[7] in module UnidadControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[6] in module UnidadControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[5] in module UnidadControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[4] in module UnidadControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[3] in module UnidadControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[2] in module UnidadControl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1113.812 ; gain = 606.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1113.812 ; gain = 606.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s100fgga676-1Q
+INFO: [Device 21-403] Loading part xc7s100fgga676-1Q
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1113.812 ; gain = 606.230
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'UnidadControl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 fetch_1 |                              001 |                               00
+                 fetch_2 |                              010 |                               01
+                 execute |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'UnidadControl'
+WARNING: [Synth 8-327] inferring latch for variable 's_freq_sel_next_reg' [C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.srcs/sources_1/new/UnidadControl.vhd:104]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1130.488 ; gain = 622.906
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 5     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 2     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 8     
+	               17 Bit    Registers := 5     
+	                8 Bit    Registers := 14    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input   17 Bit        Muxes := 10    
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	  11 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 13    
+	  11 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 160 (col length:80)
+BRAMs: 240 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP G_Vibrador_Instances[0].VIB_Inst/limite_pulso0, operation Mode is: (A:0xc99)*B.
+DSP Report: operator G_Vibrador_Instances[0].VIB_Inst/limite_pulso0 is absorbed into DSP G_Vibrador_Instances[0].VIB_Inst/limite_pulso0.
+DSP Report: Generating DSP G_Vibrador_Instances[1].VIB_Inst/limite_pulso0, operation Mode is: (A:0xc99)*B.
+DSP Report: operator G_Vibrador_Instances[1].VIB_Inst/limite_pulso0 is absorbed into DSP G_Vibrador_Instances[1].VIB_Inst/limite_pulso0.
+DSP Report: Generating DSP G_Vibrador_Instances[2].VIB_Inst/limite_pulso0, operation Mode is: (A:0xc99)*B.
+DSP Report: operator G_Vibrador_Instances[2].VIB_Inst/limite_pulso0 is absorbed into DSP G_Vibrador_Instances[2].VIB_Inst/limite_pulso0.
+DSP Report: Generating DSP G_Vibrador_Instances[3].VIB_Inst/limite_pulso0, operation Mode is: (A:0xc99)*B.
+DSP Report: operator G_Vibrador_Instances[3].VIB_Inst/limite_pulso0 is absorbed into DSP G_Vibrador_Instances[3].VIB_Inst/limite_pulso0.
+WARNING: [Synth 8-3917] design System_TOP has port o_uc_state[1] driven by constant 0
+WARNING: [Synth 8-3917] design System_TOP has port o_uc_state[0] driven by constant 0
+WARNING: [Synth 8-7129] Port enable in module Buzzer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_enable in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[7] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[6] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[5] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[4] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[3] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_address[2] in module RegistrosSensores is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[7] in module UnidadControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[6] in module UnidadControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[5] in module UnidadControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[4] in module UnidadControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[3] in module UnidadControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port acc_out[2] in module UnidadControl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1307.996 ; gain = 800.414
+---------------------------------------------------------------------------------
+ Sort Area is  G_Vibrador_Instances[0].VIB_Inst/limite_pulso0_0 : 0 0 : 360 360 : Used 1 time 0
+ Sort Area is  G_Vibrador_Instances[1].VIB_Inst/limite_pulso0_2 : 0 0 : 360 360 : Used 1 time 0
+ Sort Area is  G_Vibrador_Instances[2].VIB_Inst/limite_pulso0_3 : 0 0 : 360 360 : Used 1 time 0
+ Sort Area is  G_Vibrador_Instances[3].VIB_Inst/limite_pulso0_4 : 0 0 : 360 360 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ActuadorVibracion | (A:0xc99)*B | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ActuadorVibracion | (A:0xc99)*B | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ActuadorVibracion | (A:0xc99)*B | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ActuadorVibracion | (A:0xc99)*B | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1307.996 ; gain = 800.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1307.996 ; gain = 800.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1520.668 ; gain = 1013.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1520.668 ; gain = 1013.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1520.668 ; gain = 1013.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1520.668 ; gain = 1013.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1520.668 ; gain = 1013.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1520.668 ; gain = 1013.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ActuadorVibracion | A*B         | 8      | 12     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ActuadorVibracion | A*B         | 8      | 12     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ActuadorVibracion | A*B         | 8      | 12     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ActuadorVibracion | A*B         | 8      | 12     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    55|
+|3     |DSP48E1 |     4|
+|4     |LUT1    |     6|
+|5     |LUT2    |    94|
+|6     |LUT3    |    18|
+|7     |LUT4    |   117|
+|8     |LUT5    |   108|
+|9     |LUT6    |    69|
+|10    |MUXF7   |     1|
+|11    |FDCE    |   209|
+|12    |FDPE    |     1|
+|13    |FDRE    |   100|
+|14    |FDSE    |     4|
+|15    |LD      |     2|
+|16    |IBUF    |     6|
+|17    |OBUF    |    90|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------------------------------------+-----------------------+------+
+|      |Instance                                |Module                 |Cells |
++------+----------------------------------------+-----------------------+------+
+|1     |top                                     |                       |   885|
+|2     |  Inst_ACC                              |Acumulador             |    21|
+|3     |  Inst_ALU                              |ALU                    |     7|
+|4     |  Inst_BUZZER                           |Buzzer                 |    59|
+|5     |  Inst_GPR                              |RegistroGPR            |    56|
+|6     |  Inst_MAR                              |RegistroMAR            |     9|
+|7     |  Inst_Motores                          |Controlador_Vibradores |   336|
+|8     |    \G_Vibrador_Instances[0].VIB_Inst   |ActuadorVibracion      |    76|
+|9     |    \G_Vibrador_Instances[1].VIB_Inst   |ActuadorVibracion_9    |    76|
+|10    |    \G_Vibrador_Instances[2].VIB_Inst   |ActuadorVibracion_10   |    76|
+|11    |    \G_Vibrador_Instances[3].VIB_Inst   |ActuadorVibracion_11   |    76|
+|12    |  Inst_PC                               |Contador_PC            |    14|
+|13    |  Inst_RET                              |RegistroRET            |     8|
+|14    |  Inst_ROM                              |MemoriaROM             |    24|
+|15    |  Inst_RegSens                          |RegistrosSensores      |   244|
+|16    |    \G_Sensor_Instances[0].Sensor_Inst  |SensorULTSON           |    50|
+|17    |      Inst_TriggerGen                   |TriggerGen_7           |    27|
+|18    |      Inst_counter                      |counter_8              |    11|
+|19    |    \G_Sensor_Instances[1].Sensor_Inst  |SensorULTSON_0         |    50|
+|20    |      Inst_TriggerGen                   |TriggerGen_5           |    27|
+|21    |      Inst_counter                      |counter_6              |    11|
+|22    |    \G_Sensor_Instances[2].Sensor_Inst  |SensorULTSON_1         |    50|
+|23    |      Inst_TriggerGen                   |TriggerGen_3           |    27|
+|24    |      Inst_counter                      |counter_4              |    11|
+|25    |    \G_Sensor_Instances[3].Sensor_Inst  |SensorULTSON_2         |    50|
+|26    |      Inst_TriggerGen                   |TriggerGen             |    27|
+|27    |      Inst_counter                      |counter                |    11|
+|28    |  Inst_UC                               |UnidadControl          |    10|
++------+----------------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1520.668 ; gain = 1013.086
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 41 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1520.668 ; gain = 1013.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1520.668 ; gain = 1013.086
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1535.672 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1648.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 2 instances
+
+Synth Design complete | Checksum: 2b845e71
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1648.129 ; gain = 1147.820
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1648.129 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/artug/Desktop/CUCEI/2do_Semestre/SistemasDigitales/PracticasEquipo2/ProyectosVivado/MicroprocesadorEquipo2/MicroprocesadorEquipo2.runs/synth_1/System_TOP.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file System_TOP_utilization_synth.rpt -pb System_TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 17 16:36:18 2025...
